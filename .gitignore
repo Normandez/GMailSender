@@ -1,0 +1,9 @@
+*.exe
+*.pro.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user*
+*.vc
+*.suo
+*VC.db
