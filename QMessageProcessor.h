@@ -4,6 +4,7 @@
 #include <QObject>
 
 #include "SConfig.h"
+#include "QNotifier.h"
 
 
 
@@ -13,9 +14,10 @@ class QMessageProcessor : public QObject
 
 private:
 	SConfig m_config;
+	QNotifier m_notifier;
 
 public:
-	QMessageProcessor( const SConfig& config, QObject *parent = 0 );
+	QMessageProcessor( const SConfig& config, const QNotifier& notifier, QObject *parent = 0 );
 	~QMessageProcessor();
 
 };

@@ -2,9 +2,10 @@
 
 
 
-QMessageProcessor::QMessageProcessor( const SConfig& config, QObject *parent )
+QMessageProcessor::QMessageProcessor( const SConfig& config, const QNotifier& notifier, QObject *parent )
 	: QObject(parent),
-	  m_config(config)
+	  m_config(config),
+	  m_notifier(notifier)
 {
 
 }
