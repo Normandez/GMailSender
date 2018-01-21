@@ -1,4 +1,5 @@
 QT += core gui
+QT += xml network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,5 +12,17 @@ SOURCES += main.cpp
 
 HEADERS += mainwindow.h
 SOURCES += mainwindow.cpp
+
+HEADERS += QMessageProcessor.h
+SOURCES += QMessageProcessor.cpp
+
+HEADERS += QHttpServer.h
+SOURCES += QHttpServer.cpp
+
+HEADERS += QNotifier.h
+SOURCES += QNotifier.cpp
+
+HEADERS += SConfig.h
+SOURCES += SConfig.cpp
 
 FORMS += mainwindow.ui

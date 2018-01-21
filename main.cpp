@@ -1,11 +1,22 @@
 #include "mainwindow.h"
 #include <QApplication>
 
+#include "SConfig.h"
+#include "QMessageProcessor.h"
+
+
+
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QApplication app(argc, argv);
+    MainWindow main_wnd;
 
-    return a.exec();
+	SConfig config;
+	LoadConfig( config, "C:/devel/GMailSender/gmailsender/config.xml" );
+
+	QMessageProcessor msg_proc( config, &app );
+
+	main_wnd.show();
+
+    return app.exec();
 }
