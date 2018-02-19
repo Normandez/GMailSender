@@ -4,7 +4,7 @@
 #include <QObject>
 
 #include "SConfig.h"
-#include "QNotifier.h"
+#include "CLogger.h"
 
 
 
@@ -14,11 +14,13 @@ class QMessageProcessor : public QObject
 
 private:
 	SConfig m_config;
-	QNotifier m_notifier;
+	CLogger m_logger;
 
 public:
-	QMessageProcessor( const SConfig& config, const QNotifier& notifier, QObject *parent = 0 );
+	QMessageProcessor( const SConfig& config, const CLogger& logger, QObject *parent = 0 );
 	~QMessageProcessor();
+
+	void Start();
 
 };
 

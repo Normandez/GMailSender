@@ -2,14 +2,19 @@
 
 
 
-QMessageProcessor::QMessageProcessor( const SConfig& config, const QNotifier& notifier, QObject *parent )
+QMessageProcessor::QMessageProcessor( const SConfig& config, const CLogger& logger, QObject *parent )
 	: QObject(parent),
 	  m_config(config),
-	  m_notifier(notifier)
+	  m_logger( logger )
+{ }
+
+
+
+QMessageProcessor::~QMessageProcessor() { }
+
+
+
+void QMessageProcessor::Start()
 {
 
 }
-
-
-
-QMessageProcessor::~QMessageProcessor() {}

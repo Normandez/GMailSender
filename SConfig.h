@@ -15,6 +15,6 @@ struct SConfig
 
 
 
-void LoadConfig( SConfig& config, const QString& config_file_name );
+bool LoadConfig( SConfig& config, const QString& config_file_name, QString& status );
 
 #endif //SCONFIG_H

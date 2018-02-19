@@ -19,8 +19,8 @@ SOURCES += QMessageProcessor.cpp
 HEADERS += QHttpServer.h
 SOURCES += QHttpServer.cpp
 
-HEADERS += QNotifier.h
-SOURCES += QNotifier.cpp
+HEADERS += CLogger.h
+SOURCES += CLogger.cpp
 
 HEADERS += SConfig.h
 SOURCES += SConfig.cpp
