@@ -1,5 +1,4 @@
-QT += core gui
-QT += xml network
+QT += core gui xml network webenginewidgets webengine
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
