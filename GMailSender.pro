@@ -12,11 +12,11 @@ SOURCES += main.cpp
 HEADERS += mainwindow.h
 SOURCES += mainwindow.cpp
 
-HEADERS += QMessageProcessor.h
-SOURCES += QMessageProcessor.cpp
+HEADERS += QMailProcessor.h
+SOURCES += QMailProcessor.cpp
 
-HEADERS += QHttpServer.h
-SOURCES += QHttpServer.cpp
+HEADERS += QGMailManager.h
+SOURCES += QGMailManager.cpp
 
 HEADERS += CLogger.h
 SOURCES += CLogger.cpp
